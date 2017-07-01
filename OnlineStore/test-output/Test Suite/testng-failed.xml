@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]">
+  <test name="priority plumbing(failed)">
+    <classes>
+      <class name="automationFramework.TestNG">
+        <methods>
+          <include name="PLP"/>
+          <include name="basketpage"/>
+          <include name="signin"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="search"/>
+          <include name="Finalreview"/>
+        </methods>
+      </class> <!-- automationFramework.TestNG -->
+    </classes>
+  </test> <!-- priority plumbing(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->
