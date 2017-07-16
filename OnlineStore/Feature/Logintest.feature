@@ -31,16 +31,43 @@ When user click on signin link
 	
 	Examples:
 	| username | password |
-	| testuser10@gmail.com | Password-1 |
+	| testuser12@gmail.com | Password-1 |
 	
 
 @tag2
-Scenario Outline: Title of your scenario outline
-Given I want to write a step with <name>
-When I check for the <value> in step
-Then I verify the <status> in step
+Scenario Outline: User is on search page
+Given user is on home page1
+When user is on searchpage and click search
+Then search result displayed
 
 Examples:
-    | name  |value | status |
-    | name1 |  5   | success|
-    | name2 |  7   | Fail   |
+|productcode|
+|THJACT20|
+
+@tag3
+Scenario Outline: user is on PLP and PDP
+When user is on PLP and PDP
+Then item added successfully to the basket
+
+Examples:
+
+|PLP and PDP|
+|THJACT20|
+
+@tag4
+
+Scenario Outline: user is on Basketpage
+When user is on Basketpage
+Then item ready for payment
+
+Examples:
+|basket|
+|THJACT20|
+
+Scenario Outline: user is on finalreviewpage
+When user is on finalreviewpage
+Then product ready for delivery
+Examples:
+|Product|
+|THJACT20|
+
